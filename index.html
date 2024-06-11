@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kart Oyunu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-[1200px] mx-auto">
+        <h1 class="flex justify-center text-[30px]">Kart Oyunu</h1>
+        <div id="selectedPlayer" class="hidden flex justify-center text-[20px]"></div> <!-- Yeni div -->
+        <div id="gameArea" class="grid grid-cols-3 gap-8 mt-[20px]">
+            <div class="card bg-blue-400 h-[300px]" data-player="debruyne"><img
+                    class="object-cover w-full h-full hidden" src="./assets/img/debruyne.jpg" alt=""></div>
+            <div class="card bg-blue-400 h-[300px]" data-player="ramos"><img class="object-cover w-full h-full hidden"
+                    src="./assets/img/ramos.jpg" alt=""></div>
+            <div class="card bg-blue-400 h-[300px]" data-player="ronaldo"><img class="object-cover w-full h-full hidden"
+                    src="./assets/img/ronaldo.jpg" alt=""></div>
+            <div class="card bg-blue-400 h-[300px]" data-player="messi"><img class="object-cover w-full h-full hidden"
+                    src="./assets/img/messi.jpg" alt=""></div>
+            <div class="card bg-blue-400 h-[300px]" data-player="neuer"><img class="object-cover w-full h-full hidden"
+                    src="./assets/img/neuer.jpg" alt=""></div>
+            <div class="card bg-blue-400 h-[300px]" data-player="Sneijder"><img
+                    class="object-cover w-full h-full hidden" src="./assets/img/Sneijder.jpg" alt=""></div>
+        </div>
+        <div class="flex justify-center mt-[20px]">
+            <button id="showPlayer" class="bg-green-500 text-white p-2 rounded">Oyuna Basla</button>
+        </div>
+        <div id="message" class="flex justify-center text-[20px] mt-[20px]"></div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
